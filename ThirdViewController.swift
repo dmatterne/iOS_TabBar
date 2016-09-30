@@ -8,11 +8,16 @@
 
 import UIKit
 
-class ThirdViewController: UIViewController {
+class ThirdViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
+    var pickerData : [String]!
+    
+    @IBOutlet weak var myImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        pickerData = ["Luke", "Leia", "Han", "Chewbacca", "Artoo", "C3PO",
+                      "Yoda"]
         // Do any additional setup after loading the view.
     }
 
@@ -31,5 +36,27 @@ class ThirdViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickerData.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return pickerData[row]
+    
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+      
+        let character = pickerData[row]
+        let fullImageName = character + ".jpg"
+        
+        myImageView.image = UIImage(named: fullImageName)
+    }
+
 
 }
