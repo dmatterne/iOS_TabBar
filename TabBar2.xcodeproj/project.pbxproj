@@ -13,6 +13,7 @@
 		8238CB9E1D9E844F00ABF84D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8238CB9C1D9E844F00ABF84D /* Main.storyboard */; };
 		8238CBA01D9E844F00ABF84D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8238CB9F1D9E844F00ABF84D /* Assets.xcassets */; };
 		8238CBA31D9E844F00ABF84D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8238CBA11D9E844F00ABF84D /* LaunchScreen.storyboard */; };
+		8238CBAB1D9E846100ABF84D /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8238CBAA1D9E846100ABF84D /* ThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		8238CB9F1D9E844F00ABF84D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8238CBA21D9E844F00ABF84D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8238CBA41D9E844F00ABF84D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8238CBAA1D9E846100ABF84D /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 		8238CB8A1D9E844F00ABF84D = {
 			isa = PBXGroup;
 			children = (
+				8238CBAA1D9E846100ABF84D /* ThirdViewController.swift */,
 				8238CB951D9E844F00ABF84D /* TabBar2 */,
 				8238CB941D9E844F00ABF84D /* Products */,
 			);
@@ -141,6 +144,7 @@
 			files = (
 				8238CB9B1D9E844F00ABF84D /* SecondViewController.swift in Sources */,
 				8238CB971D9E844F00ABF84D /* AppDelegate.swift in Sources */,
+				8238CBAB1D9E846100ABF84D /* ThirdViewController.swift in Sources */,
 				8238CB991D9E844F00ABF84D /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
